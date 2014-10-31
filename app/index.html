@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html ng-app="quickStartApp">
+<head>
+	<meta charset="utf-8">
+	<title>Quckstart for AngularJS</title>
+	<meta name="description" content="">
+	<link rel="shortcut icon" href="/favicon.ico">
+	
+	<!-- build:css styles/main.css -->
+	<link rel="stylesheet" href="styles/main.css">
+	<!-- endbuild -->
+
+	<!-- build:css styles/vendor.css -->
+	<link rel="stylesheet" href="bower_components/angular-ui-select/dist/select.min.css">
+	<!-- Select2 theme -->
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/select2/3.4.5/select2.css">
+
+	<!-- endbuild -->
+</head>
+<body>
+	<div class="container" ng-controller="MainCtrl">
+		<div class="jumbotron">
+			<h1 data-ng-bind="slogan.text">.....</h1>
+			<h2>
+				<img class="logo" src="images/AngularJS-large.png">
+			</h2>
+			<p class="lead"></p>
+		</div>
+		<div class="row">
+			<h4>Input box</h4>
+			<input type="text" id="typing" style="width:350px" placeholder="Type words..." ng-model="slogan.text"></input>
+		</div>
+		<div class="row">
+			<h4>Select with <a href="https://github.com/angular-ui/ui-select">select 2</a> plugin</h4>
+			<ui-select ng-model="$parent.slogan" theme="select2" style="min-width: 300px;">
+		    <ui-select-match placeholder="Select a person in the list or search his name/age...">{{$select.selected.text}}</ui-select-match>
+		    <ui-select-choices repeat="word in words | filter: $select.search">
+		      {{word.text}}
+		    </ui-select-choices>
+		  </ui-select>
+    </div>
+    <div class="row">
+    	<h4>Select</h4>
+    	<ul id="icheck-input">
+  			<li ng-repeat="word in words">
+  				<input type="radio" name="slogan" value="{{word.text}}" ng-model="slogan.text"><label>{{word.text}}</label>
+  			</li>
+			</ul>
+		</div>
+	</div>
+	
+	<!-- build:js scripts/vendor.js -->
+	<script src="../bower_components/angular/angular.min.js"></script>
+	<script src="../bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+	<script src="bower_components/angular-ui-select/dist/select.min.js"></script>
+	<!-- endbuild -->
+
+	<!-- build:js scripts/main.min.js -->
+	<script src="scripts/main.js"></script>
+	<!-- endbuild -->
+</body>
+</html>

@@ -2,5 +2,8 @@
   "name": "quickstart-angularjs",
   "private": true,
   "dependencies": {
+    "angular": "~1.3.0",
+    "angular-ui-select": "~0.8.3",
+    "angular-sanitize": "~1.3.0"
   }
 }
