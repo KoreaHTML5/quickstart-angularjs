@@ -1,0 +1,63 @@
+html, body {
+	margin: 0;
+	padding: 10px;
+	font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+}
+
+.container {
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-top: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 730px;
+}
+
+.container h4 {
+	font-size: 18px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-family: inherit;
+	font-weight: 500;
+	line-height: 1.1;
+	color: inherit;
+}
+
+.jumbotron {
+	padding-top: 48px;
+	padding-bottom: 48px;
+	padding-right: 64px;
+	padding-left: 64px;
+	margin-bottom: 30px;
+	background: linear-gradient(to bottom, rgba(221,221,221,1) 0%,rgba(225,225,225,0) 21%,rgba(235,235,235,0) 81%,rgba(238,238,238,1) 100%);
+	text-align: center;
+	border-bottom: 1px solid #e5e5e5;
+	border-radius: 6px;
+}
+
+.jumbotron h1 {
+	color:#000;
+}
+
+.row {
+	position: relative;
+	margin: 30px 0;
+	min-height: 10px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+ul#icheck-input {
+	padding: 0;
+}
+
+ul#icheck-input li {
+	list-style-type: none;
+	padding: 0;
+}
+
+ul#icheck-input label {
+	margin-left: 10px;
+	font-family: inherit;
+	font-size: 16px;
+}
