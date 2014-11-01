@@ -8,7 +8,7 @@ Angularjs 로 만들어진 기본 웹어플리케이션입니다. 자세한 사�
 
 # 빠르게 시작하기
 
-1. 마지막으로 릴리즈 된 버전을 [여기에서]() 다운로드 하세요.
+1. 마지막으로 릴리즈 된 버전을 [여기에서](https://github.com/KoreaHTML5/quickstart-angularjs/releases) 다운로드 하세요.
 1. 원하는 프로젝트 경로에 압축을 푸세요 그리고 해당 프로젝트 경로(압출을 푼)로 이동하세요
 1. ```bower install && npm install``` 명령으로 관련 파일을 설치하세요 (주의: 반드시 Node.js, bower, gulp 가 설치되어 있어야 합니다.
 1. ```gulp serve``` 로 페이지의 동작을 확인하세요
