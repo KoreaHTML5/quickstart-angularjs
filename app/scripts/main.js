@@ -1,20 +1,22 @@
-angular.module("quickStartApp",["ui.select"])
+'use strict';
+
+angular.module('quickStartApp',['ui.select'])
 	.controller('MainCtrl', ['$scope', function ($scope) {
-		
+
 		$scope.slogan = {
-			text : "Hello, Quick start AngularJS"
+			text : 'Hello, Quick start AngularJS'
 		};
 
 		$scope.words = [{
-			text : "Hello, Quick start AngularJS"
+			text : 'Hello, Quick start AngularJS'
 		},{
-			text : "Hello"
+			text : 'Hello'
 		},{
-			text : "Quickstart"
+			text : 'Quickstart'
 		},{
-			text : "AngularJS"
+			text : 'AngularJS'
 		},{
-			text : "WebFramework"
+			text : 'WebFramework'
 		}];
-		
+
 	}]);
