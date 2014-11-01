@@ -61,19 +61,6 @@ gulp.task('html', function () {
     .pipe($.size({title: 'html'}));
 });
 
-// Copy the files associated with components
-gulp.task('assets', function () {
-  return gulp.src([
-    'bower_components/iCheck/skins/**/*',
-    '!bower_components/iCheck/skins/all.css',
-    'bower_components/chosen/chosen-sprite@2x.png',
-    'bower_components/chosen/chosen-sprite.png',
-  ], {
-    dot: true
-  }).pipe(gulp.dest('dist/styles'))
-    .pipe($.size({title: 'copy'}));
-});
-
 // Clean Output Directory
 gulp.task('clean', del.bind(null, ['dist']));
 
@@ -107,5 +94,5 @@ gulp.task('serve:dist', ['default'], function () {
 
 // Build Production Files, the Default Task
 gulp.task('default', ['clean'], function (cb) {
-  runSequence(['jshint', 'html', 'images', 'copy', 'assets'], cb);
+  runSequence(['jshint', 'html', 'images', 'copy'], cb);
 });
